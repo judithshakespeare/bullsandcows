@@ -10,12 +10,9 @@
     padding-right: .5rem;
 }
 
-@media (min-width: 1200px){
-    .container {
-    max-width: 960px;
-}
-
-@media (min-width: 1400px){
-    .container {
-    max-width: 960px;
+#timerDisplay{
+    width: 200px;
+    margin-top: 2rem;
+    padding: .5rem;
+    border: 1px solid #ced4da;
 }
