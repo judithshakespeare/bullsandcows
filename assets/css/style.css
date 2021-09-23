@@ -1,18 +1,12 @@
-#wrapper form{
-    margin-top: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #ced4da;
+.container{
+    padding-top: 1rem;
+}
+
+form{
+    margin-top: 1rem;
 }
 
 #result{
-    width: 200px;
-    padding-left: .5rem;
-    padding-right: .5rem;
-}
-
-#timerDisplay{
-    width: 200px;
-    margin-top: 2rem;
-    padding: .5rem;
-    border: 1px solid #ced4da;
+    margin-top: 1rem;
+    width: 300px;
 }

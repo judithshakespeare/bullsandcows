@@ -15,39 +15,39 @@
 </head>
 
 <body>
-    <div class="container" id="wrapper">
+    <div class="container">
         <div class="row">
-            <div class="col">
-                <form class="input-group mb-3">
-                    <input class="form-control inputNum" id="focus" type="text" placeholder="숫자를 입력하세요"
-                        autocomplete="off" maxlength="1" autofocus>
-                    <input class="form-control inputNum" type="text" placeholder="숫자를 입력하세요" autocomplete="off"
-                        maxlength="1">
-                    <input class="form-control inputNum" type="text" placeholder="숫자를 입력하세요" autocomplete="off"
-                        maxlength="1">
-                    <button class="btn btn-primary btn-sm" type="button" id="submit">Play</button>
-                </form>
-                <div id="result"></div>
+            <div class="col-sm-8">
+                <div id="countRound"></div>
             </div>
-            <div class="col">
-                <div id="timerDisplay">0.00</div>
+            <div class="col-sm-4">
+                <div id="timer">0.00</div>
             </div>
         </div>
+        <div class="row">
+            <div class="coloum">
+                <form class="input-group">
+                    <input class="form-control" id="focus" type="text" placeholder="숫자를 입력하세요" autocomplete="off" maxlength="1" autofocus>
+                    <input class="form-control" type="text" placeholder="숫자를 입력하세요" autocomplete="off" maxlength="1">
+                    <input class="form-control" type="text" placeholder="숫자를 입력하세요" autocomplete="off" maxlength="1">
+                    <button class="btn btn-primary btn-sm" id="playBtn" type="button">Play</button>
+                </form>
+            </div>
+        </div>
+        <div id="result"></div>
     </div>
-
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body" id="modal-contents">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">닫기</button>
                 </div>
             </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
         integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
         crossorigin="anonymous"></script>
